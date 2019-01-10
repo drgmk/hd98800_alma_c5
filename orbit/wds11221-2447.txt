@@ -1,0 +1,245 @@
+USNO Double Star data for WDS 11221-2447
+
+Note: the data request software was rewritten in June 2012, following a reformat of the WDS database, Please see the
+new datarequest.key file for a description of file contents. This effort is still ongoing; your comments regarding
+format, errors, or missing information are welcome.
+
+------------------------------------------------------------------------------------------------------------------------
+
+MEASURES:
+
+GRE   3Aa,Ab 1990 1990    0  -1  -1   0.2   0.2  9.59   .   K5V       -085-033                   N    112205.29-244639.8
+       1990.          .      .       0.2       .        8.89   .       .     .     541  88     .    1 Gre1992  C    7   
+       1990.          .      .        .        .       10.14   .       .     .     452  98     .    1 Gre1992  C    7   
+       1990.          .      .        .        .        7.38   .       .     .     801 155     .    1 Gre1992  C    7   
+       1990.          .      .        .        .        8.12   .       .     .     644 128     .    1 Gre1992  C    7   
+       1990.          .      .        .        .        9.02   .       .     .     362  65     .    1 Gre1992  C    7   
+
+I   507AB    1909 2015   32 190   6   1.0   0.6  9.59 10.06 K4V       -092-031 -092-031 -24 9706 NO   112205.29-244639.8
+       1909.5      190.      .       1.0       .         .     .      1.0    .                0.2   1 I__1909  Ma   0   
+       1910.3      180.      .       0.8       .         .     .      0.1    .                0.2   1 I__9999  Ma   0   
+       1912.66     187.0     .       0.65      .         .     .      0.4    .                0.2   6 I__1914  Ma   0   
+       1926.25     192.5     .       0.41      .         .     .      0.2    .                0.7   4 B__1928b Ma   0   
+       1930.39     194.0     .       0.37      .         .     .      0.3    .                0.7   4 B__1930a Ma   0   
+       1936.32     204.7     .       0.23      .        9.4    .      9.7    .                0.7   4 B__1936b Ma   0   
+       1937.83     204.1     .       0.24      .        9.1    .      9.4    .                0.7   2 Fin1951a Ma   0   
+       1937.98     206.8     .       0.18      .        9.5    .      9.7    .                0.7   3 B__1949c Ma   0   
+       1947.31        .      .    E   .        .         .     .       .     .                0.7   1 B__1956a Ma   0   
+       1952.34        .      .    E   .        .         .     .       .     .                0.7   1 B__1956a Ma   0   
+       1956.36        .      .    E   .        .         .     .       .     .                0.7   1 B__1957b Ma   0   
+       1959.25     348.7     .       0.18      .        9.6    .      9.9    .                0.7   4 B__1960a Ma   0   
+       1960.27       0.0     .       0.20      .        9.6    .     10.0    .                0.7   3 B__1961a Ma   1   
+       1963.85     358.7     .       0.26      .        9.8    .     10.2    .                0.7   2 Knp1965  Ma   2   
+       1964.35       1.1     .       0.30      .        9.7    .     10.0    .                0.7   4 B__1965a Ma   2   
+       1967.28       1.9     .       0.32      .        9.8    .     10.0    .                0.7   2 Knp1968  Ma   2   
+       1976.131      2.2     .       0.52      .         .     .      0.4    .                1.5   3 Wor1978  Mb   2   
+       1979.21       1.1     .       0.59      .         .     .      0.3    .                0.9   3 Hei1980a Mb   2   
+       1989.39       3.5     .       0.73      .        9.6    .     10.0    .                1.0   2 Hei1990b Mb   4   
+       1991.25       2.9     .       0.775     .        9.536 0.007  10.080 0.011  511 222    0.3   1 HIP1997a Hh   5   
+       1991.25        .      .        .        .       10.94   .     11.69  0.05   435  70    0.3   1 Fab2000a Hh   7   
+       1991.25        .      .        .        .        9.61   .     10.28  0.02   505  97    0.3   1 Fab2000a Hh   7   
+       1991.3893     3.2     .       0.777     .         .     .       .     .     538  76    4.0   1 Hrt1993  Sc   4   
+       1991.67       1.8     .       0.73      .        9.59  0.02   10.06  0.03   530 100    0.3   1 TYC2002  Ht   6   
+       1991.67        .      .        .        .       10.96  0.05   11.56  0.07   430  90    0.3   1 TYC2002  Ht   7   
+       1996.009       .      .        .        .         .     .     -0.00  0.11  2210  40    9.8   1 Pra2001  Si   7   
+       1996.012       .      .        .        .         .     .     -0.07  0.11  1658 333    9.8   1 Pra2001  Si   7   
+       1996.015       .      .        .        .         .     .     -0.10  0.11  1251 292    9.8   1 Pra2001  Si   7   
+       1996.171       .      .        .        .         .     .      0.06  0.05   955   5    2.4   1 Sdb1998  Hp   7   
+       1996.171       .      .        .        .         .     .      0.53  0.05   525 122    2.4   1 Sdb1998  Hp   7   
+       1996.171       .      .        .        .         .     .      0.82  0.05   429  46    2.4   1 Sdb1998  Hp   7   
+       1996.1838     3.1     .       0.807     .         .     .       .     .     549  22    4.0   1 Hrt2000a Sc   5   
+       1996.261       .      .        .        .         .     .      0.00  0.16   4.7 1.0u   3.6   1 Geh1999  Ci   7   
+       1996.261       .      .        .        .         .     .     -1.42  0.17   9.8 1.3u   3.6   1 Geh1999  Ci   7   
+       1997.504       .      .        .        .         .     .      0.064 0.008 1081  10    2.4   1 Low1999  Hn   7   
+       1997.504       .      .        .        .         .     .     -0.095 0.005 1875  19    2.4   1 Low1999  Hn   7   
+       1998.          .      .        .        .         .     .     -0.012 0.002 1452 197    2.4   1 Low1999  Hn   7   
+       1998.200       .      .        .        .         .     .     -0.21   .    4680 570    9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -0.98   .    7910 590    9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -1.72   .    8810 870    9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -2.52   .    9690 930    9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -2.97   .    10.3 1.0u   9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -3.32   .    11.7 1.1u   9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .     -3.55   .    12.5 1.2u   9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .    <-3.6    .    17.9 2.0u   9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .    <-3.6    .    20.8 1.7u   9.8   1 Ker2000  Ci   7   
+       1998.200       .      .        .        .         .     .    <-4.2    .    24.5 0.8u   9.8   1 Ker2000  Ci   7   
+       1998.331       .      .        .        .         .     .     -0.048 0.003 1900  17    2.4   1 Low1999  Hn   7   
+       1998.331       .      .        .        .         .     .      0.110 0.005  954   9    2.4   1 Low1999  Hn   7   
+       1998.356       .      .        .        .         .     .     -0.00  0.06  2200 410    9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -0.27  0.12  4800 600    9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -0.94  0.10  7900 760    9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -1.63  0.04  8800 870    9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -2.38  0.04  9800 950    9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -2.69  0.04  10.3 1.0u   9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -2.77  0.06  10.8 5.2u   9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -2.89  0.05  11.7 1.1u   9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -3.02  0.11  12.5 1.2u   9.8   1 Pra2001  Ci   7   
+       1998.356       .      .        .        .         .     .     -4.42  0.26  18.2 1.7u   9.8   1 Pra2001  Ci   7   
+       1999.397       .      .        .        .         .     .      0.01  0.08  1648 317    9.8   1 Pra2001  A    7   
+       2004.089      3.      .       0.78      .         .     .      0.05   .    1625        8.2   1 Bil2007  A    7   
+       2006.1913     3.7     .       0.745     .         .     .       .     .     550  24    4.0   1 Msn2009  Su   7   
+       2009.2654     4.2    0.0      0.7144   0.0001     .     .      0.9    .     550  89    4.1   1 Tok2010  S    7   
+       2009.2654     4.3    0.0      0.7140   0.0005     .     .      0.3    .     644 128    4.1   1 Tok2010  S    7   
+       2009.2654     4.2    0.0      0.7139   0.0001     .     .      0.7    .     551  22    4.1   1 Tok2010  S    7   
+       2011.0372     4.9    0.0      0.6877   0.0005     .     .    : 1.0    .     534  22    4.1   2 Tok2012d St   7   
+       2011.0372     5.0    0.0      0.6853   0.0001     .     .      0.6    .     788 132    4.1   2 Tok2012d St   7   
+       2013.1289     5.3    0.0      0.6291   0.0001     .     .      0.6    .     596 121    4.1   1 Tok2014a St   7   
+       2013.1289     5.3    0.0      0.6300   0.0002     .     .      0.3    .     788 132    4.1   2 Tok2014a St   7   
+       2014.0598     5.0    0.0      0.6021   0.0001     .     .      0.4    .     788 132    4.2   4 Tok2015c St   7   
+       2015.1714     5.6    0.0      0.5711   0.0003     .     .      0.7    .     543  22    4.1   2 Tok2016a St   7   
+       2015.1714     5.7    0.0      0.5707   0.0005     .     .      0.3    .     788 132    4.1   2 Tok2016a St   7   
+
+SHY 228AB,C  1991 1998    3 126 126 999.9 999.9  9.24  8.53 K5V+G7V   -092-031 -124-034          NV   112205.29-244639.8
+       1991.25     126.2     .    M528.402     .        8.89   .      8.44   .     550        0.3   1 HIP1997a Hh   7   
+       1991.66     126.2     .    M528.403     .        9.239 0.017   8.534 0.014  530 100    0.3   1 TYC2002  Ht   7   
+       1991.66        .      .        .        .       10.642 0.037   9.345 0.020  430  90    0.3   1 TYC2002  Ht   7   
+       1998.88     126.3     .    M528.751     .        6.397 0.020   7.162 0.023 1256 245    1.3   1 TMA2003  E2   7   
+       1998.88        .      .        .        .        5.759 0.027   6.803 0.034 1633 160    1.3   1 TMA2003  E2   7   
+       1998.88        .      .        .        .        5.587 0.021   6.775 0.036 2210 200    1.3   1 TMA2003  E2   7   
+
+BOD   1Ba,Bb 1996 2001   11 315 300   0.0   0.0 10.4  11.5  K4V+...   -092-031                   NO   112205.34-244639.5
+       1996.9943   315.00    .       0.0222   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       1996.9945   315.00    .       0.0273   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       1999.5439   307.22    .       0.0298   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       1999.5934   317.33    .       0.0174   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2000.4608   306.87    .       0.0205   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2000.5185   306.93    .       0.0201   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2000.5588   310.25    .       0.0197   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2001.0742   271.60    .       0.0215   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2001.1575   283.59    .       0.0187   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2001.3210   325.61    .       0.0273   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+       2001.9805   300.47    .       0.0197   0.009      .     .       .     .     583 234    2.4   1 Bod2005b Hf   7   
+
+------------------------------------------------------------------------------------------------------------------------
+
+ORBITAL ELEMENTS:
+
+                  ------P-------  ---a------  --i-----  Node----  -----T-------  -e------  omega---  G  Reference
+I   507AB            214.0     y    1.030  a   88.1     184.2      2023.1     y  0.400     249.1     5  Tok2014a
+               +/-      .            .           .         .           .          .           .    
+BOD   1Ba,Bb         314.327   d   23.3    m   66.8     337.6     52481.34    m  0.7849    109.6     3  Bod2005b
+               +/-     0.028        2.5         3.2       2.4         0.22       0.0053      1.1   
+
+
+ORBITAL EPHEMERIDES:
+
+Name            Grade  Reference   Theta   Rho      Theta   Rho      Theta   Rho      Theta   Rho  
+                                       2014.0           2015.0           2016.0           2017.0   
+I   507AB         5    Tok2014a      5.4   0.559      5.6   0.528      5.8   0.496      6.0   0.462
+BOD   1Ba,Bb      3    Bod2005b    255.6   0.014    283.5   0.019    300.5   0.023    313.9   0.024
+
+------------------------------------------------------------------------------------------------------------------------
+
+NOTES:
+
+GRE   3     Aa,Ab: IRAS 11195-2430 = PDS 54.                                        Gre1992 
+I   507     Variable TV Crt. Tokovinin (1999) gives three possible orbits which     Tok1999b
+            are consistent with visual and IR speckle observations, as well as      .       
+            radial velocity difference and Hipparcos parallax for stars of this     .       
+            type (K5V). Inclination is near 90 degrees, but eccentricity is not     .       
+            high, as predicted by Torres et al. (1995).                             Trr1995b
+            Star has large IR excess. A component is SB1 (P=262 days), while B      .       
+            component is SB2 (P=315 days).                                          Tok1999b
+            Torres et al. (1995) report radial velocity data and make some          .       
+            constraints on possible astrometric orbits.                             Trr1995b
+            See also HST observations and discussion of all components of this      .       
+            multiple system by Soderblom et al. (1998).                             Sdb1998 
+SHY 228     AC: HIP  55505 + HIP  58029.                                            .       
+BOD   1     Ba,Bb. Masses determined at 0.699+/-0.064 and 0.582+/-0.051 Msun by     Bod2005b
+            Boden et al. (2005).                                                    .       
+
+------------------------------------------------------------------------------------------------------------------------
+
+REFERENCES:
+
+B__1928b   van den Bos, W.H.                                                                     1928AnLei..144...1V
+           Ann. Leiden Obs. 14, Pt.4, 1928                                                                          
+B__1930a   van den Bos, W.H.                                                                     1930CiUO...83..135V
+           Union Obs. Johannesburg Circ. 83, 135, 1930                                                              
+B__1936b   van den Bos, W.H.                                                                     1936CiUO...96..234V
+           Union Obs. Johannesburg Circ. 96, 234, 1936                                                              
+B__1949c   van den Bos, W.H.                                                                     1949CiUO..108..312V
+           Union Obs. Johannesburg Circ. 108, 312, 1949                                                             
+B__1956a   van den Bos, W.H.                                                                     1956CiUO..115..266V
+           Union Obs. Johannesburg Circ. 115, 266, 1956                                                             
+B__1957b   van den Bos, W.H.                                                                     1957CiUO..116..291V
+           Union Obs. Johannesburg Circ. 116, 291, 1957                                                             
+B__1960a   van den Bos, W.H.                                                                     1960CiUO..119..321V
+           Union Obs. Johannesburg Circ. 119, 321, 1960                                                             
+B__1961a   van den Bos, W.H.                                                                     1961CiUO..120..353V
+           Union Obs. Johannesburg Circ. 120, 353, 1961                                                             
+B__1965a   van den Bos, W.H.                                                                     1965ROCi..124...70V
+           Republic Obs. Circ. 124, 70, 1965                                                                        
+Bil2007    Biller, B.A., Close, L., Masciadri, E., Nielsen, E., Lenzen, R., Brandner, W.,        2007ApJS..173..143B
+           McCarthy, D., Hartung, M., et al.                                                                        
+           ApJS 173, 143, 2007                                                                                      
+Bod2005b   Boden, A.F. Sargent, A.I., Akeson, R.L., Carpenter, J.M., Torres, G., Latham, D.W.,   2005ApJ...635..442B
+           Soderblom, D.R., Nelan, E., et al.                                                                       
+           ApJ 635, 442, 2005                                                                                       
+Fab2000a   Fabricius, C. & Makarov, V.V.                                                         2000A&A...356..141F
+           A&A 356, 141, 2000                                                                                       
+Fin1951a   Finsen, W.S.                                                                          1951CiUO..112..104F
+           Union Obs. Johannesburg Circ. 112, 104, 1951                                                             
+Geh1999    Gehrz, R.D., Smith, N., Low, F.J., Krautter, J., Nollenberg, J.G., & Jones, T.J.      1999ApJ...512L..55G
+           ApJ 512, L55, 1999                                                                                       
+Gre1992    Gregorio-Hetem, J., Lepine, J.R.D., Quast, .R., Torres, C.A.O., & de la Reza, R.      1992AJ....103..549G
+           AJ 103, 549, 1992                                                                                        
+Hei1980a   Heintz, W.D.                                                                          1980ApJS...44..111H
+           ApJS 44, 111, 1980                                                                                       
+Hei1990b   Heintz, W.D.                                                                          1990ApJS...74..275H
+           ApJS 74, 275, 1990                                                                                       
+HIP1997a   Hipparcos                                                                             1997yCat.1239....0E
+           Hipparcos Catalog, ESA SP-1200, 1997   (incl. Hp photometry, vol. 10)                                    
+Hrt1993    Hartkopf, W.I., Mason, B.D., Barry, D.J., McAlister, H.A., Bagnuolo, W.G., &          1993AJ....106..352H
+           Prieto, C.M.                                                                                             
+           AJ 106, 352, 1993                                                                                        
+Hrt2000a   Hartkopf, W.I., Mason, B.D., McAlister, H.A., Roberts, L.C., Jr., Turner, N.H.,       2000AJ....119.3084H
+           ten Brummelaar, T.A., Prieto, C.M., Ling, J.F., & Franz, O.G.                                            
+           AJ 119, 3084, 2000                                                                                       
+I__1909    Innes, R.T.A.                                                                         .                  
+           Transvaal Obs. Circ. 1, 1, 1909                                                                          
+I__1914    Innes, R.T.A.                                                                         1914CiUO...14...97.
+           Union Obs. Johannesburg Circ. 14, 97, 1914                                                               
+I__9999    Innes, R.T.A.                                                                         ...................
+           Unpublished, manuscript or reference not found.                                                          
+Ker2000    Koerner, D.W., Jensen, E.L.N., Cruz, K.L., Guild, T.B., & Gultekin, K.                2000ApJ...533L..37K
+           ApJ 533, L37, 2000                                                                                       
+Knp1965    Knipe, G.F.G.                                                                         1965ROCi..124...74K
+           Republic Obs. Circ. 124, 74, 1965                                                                        
+Knp1968    Knipe, G.F.G.                                                                         1968ROCi..127..162K
+           Republic Obs. Circ. 127, 162, 1968                                                                       
+Low1999    Low, F., Hines, D., & Schneider, G.                                                   1999ApJ...520L..45L
+           ApJ 520, L45, 1999                                                                                       
+Msn2009    Mason, B.D., Hartkopf, W.I., Gies, D.R., Henry, T.J., & Helsel, J.W.                  2009AJ....137.3358M
+           AJ 137, 3358, 2009                                                                                       
+Pra2001    Prato, L., Ghez, A.M., Pina, R.K., Telesco, C.M., Fisher, R.S., Wizinowich, P.,       2001ApJ...549..590P
+           Lai, O., Acton, D.S., & Stomski, P.                                                                      
+           ApJ 549, 590, 2001                                                                                       
+Sdb1998    Soderblom, D.R. et al.                                                                1998ApJ...498..385S
+           ApJ 498, 385, 1998                                                                                       
+TMA2003    2MASS Catalog                                                                         .                  
+           2MASS Point Src Cat., 2003 all-sky release (http://pegasus.phast.umass.edu/)                             
+           (Note: 2MASS photometry also added by cataloguer to 2MASS astrometry published                           
+           under other references.)                                                                                 
+Tok1999b   Tokovinin, A.A.                                                                       1999AstL...25..669T
+           SvAL 25, 669, 1999  (Pisma Astron. Zhur. 25, 771, 1999)                                                  
+Tok2010    Tokovinin, A., Mason, B., & Hartkopf, W.                                              2010AJ....139..743T
+           AJ 139, 743, 2010                                                                                        
+Tok2012d   Hartkopf, W.I., Tokovinin, A., & Mason, B.D.                                          2012AJ....143...42H
+           AJ 143, 42, 2012                                                                                         
+Tok2014a   Tokovinin, A., Mason, B.D., & Hartkopf, W.I.                                          2014AJ....147..123T
+           AJ 147, 123, 2014                                                                                        
+Tok2015c   Tokovinin, A., Mason, B.D., Hartkopf, W.I., Mendez, R.A., & Horch, E.P.               2015AJ....150...50T
+           AJ 150, 50, 2015                                                                                         
+Tok2016a   Tokovinin, A., Mason, B.D., Hartkopf, W.I., Mendez, R.A., & Horch, E.P.               2016AJ............T
+           AJ, in press (arXiv:1603.07596)                                                                          
+Trr1995b   Torres, G. Stefanik, R.P., Latham, D.W., & Mazeh, T.                                  1995ApJ...452..870T
+           ApJ 452, 870, 1995                                                                                       
+TYC2002    Fabricius, C., Hog, E., Makarov, V.V., Mason, B.D., Wycoff, G.L., & Urban, S.E.       2002A&A...384..180F
+           A&A 384, 180-189, 2002                                                                                   
+           (re-reduction of Tycho data)                                                                             
+Wor1978    Worley, C.E.                                                                          1978PUSNO..24....1W
+           Pub. USNO 24, Pt. 6, 1978                                                                                
+
+------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,658 @@
+Version : 26 February 2016
+
+
+                DATA FROM THE WASHINGTON DOUBLE STAR CATALOGS            
+                                    (WDS)
+        
+                         U.S. NAVAL OBSERVATORY                              
+                         WASHINGTON D.C. 20392                             
+        
+   As a result of numerous changes in software and hardware, as well as the 
+addition of new catalogs, information is now provided in a somewhat different 
+format. It is hoped that this presentation is clearer; if it is in any way 
+confusing, or there are omissions, please let us know.
+
+   The WDS (and associated catalogs) are at present in a state of flux. At
+this point the following things have been done :
+
+
+General comments:
+      1. Data from all catalogs are referenced to a single note file and 
+         single reference file. 
+      2. To facilitate those of you who make data requests on a regular
+         basis I've added a "version number" to the top line so that it is
+         known when this file is modified. Typically a user can just check
+         these numbered notes and look for new ones.
+      3. Explanatory material from the WDS "intro.doc" added to this file,
+         so that all explanatory WDS material is in a single file.
+
+WDS summary lines:
+      1. Arcsecond precise coordinates have been provided when available.
+      2. Secondary proper motions have been provided when available .
+      3. Duplicate discovery designations have been removed. Some numbers
+         had been used more than once erroneously. In addition, some
+         discovery designations were given unfortunate additional
+         designations ("1/2", "a", and even the Struves' use of "App"). Some
+         numbers were repeated due to the discoverer having more than one
+         list (Herschel lists I-VI and N come to mind). To make the WDS
+         discovery designation more clear all of these duplicate
+         designations have been corrected.
+      4. The magnitude information in the WDS is a hodge-podge of data. Many
+         systems with entries in the delta-m catalog inexplicably had little
+         or no magnitude information available. These have been updated to be
+         as consistent as possible, taking Tycho V magnitudes when available.
+      5. X codes have been added in column 109 of the summary line when the 
+         pair is questionable. Generally these are unconfirmed systems, which
+         pairs may represent positional typos in the original publication 
+         (thus we're looking in the wrong location), optical doubles which
+         have changed greatly in separation and/or angle due to radically
+         different proper motions, plate errors, or may simply be not at the
+         magnitude, separation, etc., where the first measure was added (too
+         faint, too close, etc.). We would certainly like to know about
+         circumstances where you have found or have ascertained the mystery
+         behind these pairs.
+      6. The format of the WDS summary lines was changed slightly:
+         a. The column for number of measures has been increased to four
+            digits. Therefore, the 607 systems which previously had "99"
+            measures (indicating N greater than or equal to this number) now
+            have the actual number of measures. Ten systems have more than
+            1000 measures, with the largest being 70 Ophiuchus with 1640.
+         b. The secondary proper motion, formerly at the end of each record,
+            has been moved next to the primary proper motion.
+         c. An additional notes column has been added. The actual notes
+            codes have not changed, however, many cases have been found
+            where a note has either been not included or put in the notes
+            file. Adding the additional column will eventually decrease the
+            size of the notes file.
+         d. Precisions of coordinate have been improved by an order of
+            magnitude in each digit, i.e., tenths of a second of arc and 
+            hundredths of a second of time. Nearly 99% of the pairs in the
+            WDS now have coordinates to this precision.
+         e. Spaces and decimals have been added where appropriate, for 
+            consistency and to improve readability.
+      7. The p code has been removed from the summary line codes in columns
+         108-111. This code referred to "Coordinates and proper motions from
+         ACRS, PPM, IRS, FK5 catalogs".
+      8. Ambiguities with "P" coded proper motion (10x larger than listed) 
+         have been corrected.
+      9. Identification of pairs that could be physical or are certainly
+         not physical are flagged, using one of several codes. See the list
+         of summary catalog codes below. As of 2009.5 these were 2894 pairs 
+         with physical codes and 1552 with optical codes; this represents 
+         2.77% and 1.49%, respectively, of the entire catalog. True natures 
+         of the vast majority of systems in the WDS are still undetermined.
+     10. At present the Durchmusterung catalogs (BD, CD, CPD) are still
+         used as the primary cross-reference (in addition to the precise
+         coordinates). It is anticipated that once it is complete, the more 
+         modern and deeper all-sky UCAC4 may be used in this role; 
+         alternatively, some combination of catalogs (Hipparcos, Tycho2, 
+         UCAC4, etc.) may be used for pairs of different magnitudes. In any 
+         event, a historical WDS <-> DD <-> BD cross reference will be 
+         available on the WDS website.
+     11. The procedure for updating first and last measures has been simplified
+         somewhat. Typically the first and last measures refer only to "full" 
+         measures (measures which include date + theta + rho); the number of 
+         measures (nmeas) counts only those full measures. A small number of 
+         pairs have only "partial" measures (measures lacking one or more of the 
+         three quantities). Therefore, if nmeas = 0, the first and last partial 
+         measure are listed; any missing value is given as "-1".
+
+WDS data lines:
+      1. The codes to the WDS data lines (columns 125 and 126) have been 
+         updated. Many codes have been removed, in favor of additional 
+         information included with the measures (for example, the "D" code, 
+         indicating that the separation is an upper limit, has been replaced 
+         with a "<" preceding rho). See the data line format table below.
+      2. Non-numeric position angles (N, NP, SF, etc.), have been converted
+         to the nearest numeric position angle and a code (L) has been added 
+         indicating the change.plate
+      3. Measures which are likely to be in error, but cannot be corrected 
+         (code "X") are not included in the ensemble of data points for the 
+         summary line. Incomplete data (missing date, position angle and/or 
+         separation) are also not included in the summary line.
+      4. Our updating of measures, orbits, and discoveries continues.
+      5. Method files for all USNO double star catalogs have been combined. 
+         The new 1- and 2-letter codes (see below) provide considerably more 
+         detailed information about the technique than previously possible.
+      6. We are in the midst of correcting many errors in the WDS. This task
+         included examining all measures containing old codes G, H, I, and J 
+         as well as large outliers in orbit or linear motion calculations.
+         In most cases, this involves going back to the original reference
+         and examining the observation to determine what errors can be
+         ascertained (often a misidentification or a typo) and corrected. We
+         have gone from these four codes to a more generic code "N" 
+         (corrected) or "X" (not corrected, while retaining the "I" 
+         (identification questionable) code. Code "X" data are not included 
+         in the summary line.
+      7. Sometimes you will find that the reference is listed as 
+         "unpublished". If you use such data, as a common courtesy dictates 
+         that you obtain the permission of the author if possible. This 
+         permission is implicitly given by us by inclusion of our own 
+         unpublished measures in the data base. Also, if you make use of data 
+         supplied by us, we would appreciate an acknowledgement in your
+         published report or paper.
+
+Associated catalogs:
+      1. Data requests now include orbital information, ephemerides, and 
+         figures illustrating the orbits and all measures, all from the 
+         Sixth Orbit Catalog. See http://ad.usno.navy.mil/wds/orb6.html for 
+         more information.
+      2. Linear solutions from the "Linear Elements Catalog"
+         <http://ad.usno.navy.mil/wds/lin1.html> as well as associated
+         ephemeris and figures are now provided with data requests as well.
+      3. Data from the delta-m catalog (previously unavailable) are included
+         in data requests. This is from the new, 3rd magnitude difference
+         catalog, over 200% larger than the first magnitude difference
+         catalog. See http://ad.usno.navy.mil/wds/dm3.html for more 
+         information.
+      4. The Fourth Interferometric Catalog is not currently checked by this  
+         program. However, virtually all relevant information from this 
+         catalog has been incorporated into the WDS database during the most 
+         recent reformat efforts. WDS technique codes were expanded to two
+         characters in order to more complete technique descriptions in the
+         Interferometric Catalog.
+
+
+=============================================================================
+
+Cross-reference (columns 99-106):
+
+Durchmusterung number of the object in the system used by the Henry Draper 
+Catalogue: 
+
+               Bonn from +89 degrees to -22 degrees inclusive, 
+            Cordoba from -23 degrees to -51 degrees inclusive, 
+  Cape Photographic from -52 degrees to -89 degrees inclusive. 
+
+When a star is not contained in the Durchmusterung proper to its declination
+zone, but is contained in another Durchmusterung, this is so indicated in the
+Notes. Other components having different Durchmusterung numbers are also 
+indicated in the Notes.
+
+Note that the DM designation for Aa,Ab and other subcomponents of A as well 
+as AB and simple binaries (i.e., no component designation) we give the 
+appropriate cross-reference for the A component.
+
+For other pairs in multiple systems, AC, AD, AB,C, or even BC, we give the 
+cross-reference of the secondary of that pairing (i.e., for the above, C, D, 
+C and C).
+
+
+WDS SUMMARY CATALOG - note flags (columns 108-111):    
+                                                                                
+                                                                          
+B  Summary line gives blue (Johnson U or B, blue photographic, etc.)
+   magnitudes
+C  Orbit and Linear solution. A published orbit exists and this system has a 
+   Linear Solution as well. A "C" code, then, indicates both an "O" and 
+   an "L" code.
+I  Identification uncertain. Match of object at precise position with WDS
+   pair may or may not be correct. Currently under examination.
+K  Summary line gives K-band or other infrared (>1 micron) magnitudes
+L  Linear solution. Linear elements for this pair have been determined. 
+M  Magnitude modified. Magnitudes have been corrected to the Tycho-V scale 
+   based on other systems measured by the discoverer and Tycho.
+N  Notes found in wdsnot.memo of the WDS.
+O  Orbit, briefly described in WDSNOT MEMO and has entry in Orbit Catalog
+P  100 year proper motion in right ascension and declination.
+R  Summary line gives red (Johnson R or I, red photographic, etc.) magnitudes.
+S  Statistically different parallax and proper motion indicates that this 
+   pair is non-physical.
+T  Statistically the same parallax within the errors and similar proper 
+   motion or other technique indicates that this pair is physical.
+U  Proper motion or other technique indicates that this pair is non-physical.
+V  Proper motion or other technique indicates that this pair is physical.
+X  A "Dubious Double" (or "Bogus Binary"). This pair may represent a
+   positional typo in the original publication (so we're looking in the
+   wrong location), an optical double disappearing due to radically
+   different proper motions, a plate flaw, or simply a pair not at a
+   magnitude, separation, etc., sufficiently similar to those noted when the
+   first measure was added (making it too faint, too close, etc.). We would
+   certainly like to know about any circumstances where you have found or
+   have ascertained the mystery behind these pairs.
+Y  Statistically different parallax for the components indicates they are
+   non-physical.
+Z  Statistically the same parallax within the errors would indicate the
+   components are physical.
+
+--------------------------------------------------------------------------------
+
+WDS OBSERVATION CATALOG: data line format             
+
+The format of the WDS data lines was greatly expanded May/June 2012, in order
+to accomodate more precise astrometry and photometry, as well as formal 
+astrometric and photometric errors and filter information. During the process 
+many old observation codes were eliminated, often by including additional 
+information with the measure itself (for example, the "D" code, indicating that 
+the separation is an upper limit, has been replaced with a "<" preceding rho). 
+The new format is described below (note that in all cases the number of decimal 
+places quoted in the catalog indicates the published precision):   
+
+term       columns   format   description
+
+date       008-017   f10.5    Observation date, in years.                  
+tflag      019-019   a1       Flag for theta (position angle) measure. Flags 
+                              include:
+                              : = uncertain/estimated (old code U)
+                              L = originally published as nf, sp, etc. 
+                              Q = quadrant flipped 180deg from published value 
+                              V = measure is vector separation along this angle 
+                                  vector 
+theta      020-026   f7.3     position angle, in degrees
+terr       028-033   f6.3     published formal theta error, in degrees
+rflag      035-035   a1       Flag for separation (rho). Flags include:
+                              : = uncertain/estimated(old code U) 
+                              < = separation is less than quoted value 
+                                  (old code D)
+                              D = separation is in degrees (old code H)
+                              E = pair elongated 
+                              G = Hipparcos non-component double star solution 
+                                  (acceleration solution: apparently single, but 
+                                  with significant non-linear motion)
+                              M = separation is in arcminutes (old code C)
+                              m = separation is in milliarcseconds (old code A)
+                              O = Hipparcos non-component double star solution 
+                                  (orbit solution: astrometric pair with orbital 
+                                  elements in 6th Orbit Catalog)
+                              R = pair resolved but no separation given 
+                              S = Hipparcos "suspected non-single" star 
+                                  (large scatter in single-star solution)
+                              U = pair unresolved/single (old code S)  
+                              V = Hipparcos non-component double star solution 
+                                  (variability-induced mover: unresolved pair  
+                                  where one componeent is variable)
+                              X = Hipparcos non-component double star solution 
+                                  (stochastic solution: Hipparcos unable to get 
+                                  acceptable single- or double-star solution)
+rho        036-044   f9.5     separation, in arcseconds (unless indicated 
+                              otherwise by rflag)
+reflag     046-046   a1       Flag for separation error. Flags include:  
+                              > = error is lower limit to true value
+                              < = error is upper limit to true value
+                              P, F, G, V = quality flags (poor, fair, etc.)
+rerr       047-053   f7.5     separation error, in same units as rho
+mflag1     055-055   a1       primary magnitude flag. Flags include:
+                              > = magnitude is lower limit to true value
+                              v = primary is variable
+mag1       056-061   f6.3     primary magnitude, in mag
+m1eflag    062-062   a1       primary magnitude error flag. Flags include:
+                              > = error is lower limit to true value
+                              < = error is upper limit to true value
+m1err      063-067   f5.3     primary magnitude error, in mag
+mflag2     069-069   a1       secondary magnitude flag. Flags include:
+                              > = magnitude is lower limit to true value
+                              f = star is too faint (old code F)
+                              s = mag2 is a magnitude rather than magnitude 
+                                  difference (only used if mag1 is blank; 
+                                  old code W)
+                              v = secondary is variable (old code V)
+mag2       070-075   f6.3     secondary magnitude, in mag. If mag1 is blank, 
+                              mag2 is the magnitude difference.   
+m2eflag    076-076   a1       secondary magnitude error flag. Flags include:
+                              > = error is lower limit to true value
+                              < = error is upper limit to true value
+m2err      077-081   f5.3     secondary magnitude error, in mag     
+filter     083-090   2a4      filter effective wavelength and FWHM, in nm
+fflag      091-091   a1       filter flag. Flags include:
+                              ? = filter information is uncertain
+                              : = filter information is approximate
+                              a = value is average of multiple filters. Filter 
+                                  columns now include the mean wavelength and 
+                                  sigma of the filters averaged.
+                              B = blue filter 
+                              c = filter effective wavelength and FWHM are in 
+                                  centimeters
+                              f = magnitudes are model-fit values rather than 
+                                  aperture magnitudes (relevant only to UCAC4 
+                                  measures)
+                              K = IR filter 
+                              M = filter effective wavelength and FWHM are in  
+                                  meters
+                              m = filter effective wavelength and FWHM are in  
+                                  millimeters
+                              n = no filter used   
+                              R = red filter     
+                              u = filter effective wavelength and FWHM are in 
+                                  microns
+                              X = X-ray band    
+tel        093-097   f5.1     telescope aperture, in meters
+teflag     098-098   a1       telescope aperture flag. Flags include:
+                              a = average of multiple telescopes (old code M)
+                              k = multiple aperture telescope, baseline in km
+nn         100-101   i2       number of nights averaged into mean measure
+ref        103-110   a8       reference code
+tech       112-113   a2       technique code. See table below.
+codes      115-116   2a1      additional codes. See table below.
+d.e. note  117-117   a1       data entry note. See table below. 
+                                                                     
+-----------------------------------------------------------------------------
+
+WDS OBSERVATION CATALOG: technique or method (data lines, columns 112-113)               
+
+These same technique codes are now used for all our catalogs; the table below
+also lists the old codes used in the WDS and Interferometric Catalog, prior 
+to the most recent reformat.
+
+    new old    description
+
+    A   U    = adaptive optics
+    Ac  Uch  = CHARA adaptive optics
+    Ad  Usd  = adaptive optics spectral deconvolution technique
+    Ag  Ula  = laser-guided AO
+    Al  Usi  = adaptive optics imaging, keeping only selected images 
+               ("lucky imaging")
+    Am  Uam  = adaptive optics with aperture mask
+    Ao  Uco  = adaptive optics coronagraph
+    As  Uds  = AO + dark speckle coronagraph
+    Aw  Ucw  = adaptive optics with coronagraph and "well-corrected 
+               subaperture"
+
+    C   F    = CCD or other two-dimensional electronic imaging
+    Ca  W    = Area scanner                             
+    Cc  Fic  = IR coronagraph
+    Ce  L    = Electronographic camera                  
+    Ci  Fir  = IR direct imaging
+    Cl  Fsi  = short-exposure CCD imaging, keeping only selected images 
+               ("lucky imaging")
+    Cp  Fip  = IR imaging polarimetry
+    Cs  Fss  = IR one-dimensional slit scanning
+    Cu  F    = USNO CCD imaging (speckle-style reduction)     
+
+    D   D    = Heliometer                               
+
+    E   E    = Wide-field CCD or other two-dimensional electronic imaging
+    E2  E2m  = 2MASS (Two Micron All-Sky Survey)
+    Ed  Ede  = DENIS (Deep Near-Infrared Survey)
+    Ek  Euk  = UKIDSS (UKIRT Infrared Deep Sky Survey)
+    Er       = USNO URAT
+    Es  Esd  = SDSS (Sloan Digital Sky Survey)
+    Eu  Eu3  = UCAC3                              
+    Eu  Eu4  = UCAC4                          
+    Ey       = Yale SPM (Southern Proper Motion) Survey
+
+    H   T    = Hipparcos/Tycho, HST, Spitzer, or other space-based technique
+    H   Q    = Hipparcos/Tycho, HST, Spitzer, or other space-based technique
+    Ha  Qac  = HST + ACS
+    Hc  Ech  = Chandra
+    He  Eei  = Einstein
+    Hf  Qfg  = HST + Fine Guidance Sensor
+    Hh  Thp  = Hipparcos
+    Hi  Qir  = Spitzer Space Telescope + IRAC (Infrared Array Camera)
+    Hk       = Kepler
+    Hm  Qmi  = Spitzer Space Telescope + MIPS (Multiband Imaging Photometer 
+               for Spitzer)
+    Hn  Qni  = HST + NICMOS IR direct imaging
+    Ho  Qfo  = HST + Faint Object Camera
+    Hp  Qpc  = HST + WFPC2 Planetary Camera
+    Hs  Qst  = HST + STIS
+    Ht  Tty  = Tycho
+    Hw  Qwi  = WISE (Wide-field Infrared Survey Explorer) satellite (IR 
+               imaging)
+    Hx  Qsx  = Spitzer Space Telescope + SpeX spectrometer and slit-viewing 
+               camera
+    Hz       = XMM Newton satellite
+
+    I   P    = interferometric technique
+    Ig  Pgi  = phase grating interferometer  
+    Im  Pmi  = Michelson interferometer
+
+    J   J    = visual interferometer
+    Jm  Jmw  = Mount Wilson 100-inch telescope rotating interferometer 
+               (Anderson, Merrill)
+    Jp  Jpe  = Mount Wilson 20-foot beam interferometer (Pease)
+
+    K   K    = long-baseline visual/IR/radio interferometer
+    K2  Kce  = CERGA 2-telescope interferometer
+    Ka  Kva  = VLTI/AMBER
+    Kb  Kbi  = BIMA 
+    Kc  Kch  = CHARA Array
+    Ke  Kev  = European VLBI network
+    Kf  Kcs  = CHARA Array (separated fringe packet data)
+    Kg  Kgl  = global VLBI array
+    Ki  Kio  = IOTA 
+    Kk  Kki  = Keck interferometer
+    Kl  Kvl  = VLA
+    Kl  Kvb  = VLBA
+    Km  Km3  = Mark III 
+    Kn  Knp  = NPOI/NOI [Navy (Prototype) Optical Interferometer]
+    Kp  Kpt  = PTI (Palomar Testbed Interferometer)
+    Kr  Kap  = radio/IR aperture synthesis technique
+    Ks  Ksu  = SUSI (Sydney University Stellar Interferometer)
+    Ku  Kpu  = Pulkovo Stellar Interferometer
+
+    M   A    = micrometry technique
+    Ma  A    = micrometer with refractor
+    Mb  B    = micrometer with reflector
+    Mc  C    = Comparison image micrometer
+    Md  N    = Visual measures with a double-image micrometer
+    Mg  M    = Microguide eyepiece                           
+    Mr  R    = RGO use of micrometer plus comparison image micrometer on same 
+               star        
+
+    O   O    = occultation 
+    O   Occ  = occultation 
+
+    P   G    = photographic technique
+    Pa  G    = photographic, with astrograph
+    Pc  Gac  = Astrographic Catalog 
+    Pe  G    = ESO Schmidt astrograph
+    Pk  Gag  = AGK Catalog
+    Po  H    = photographic, with medium or long-focus technique or with 
+               ocular enlargement
+    Pp  Gp1  = Palomar Observatory Sky Survey (POSS-I)     
+               1948-1958, 48in/1.2m Schmidt
+    Pp  Gp2  = Palomar Observatory Sky Survey (POSS-II)    
+               1985-1999, 48in/1.2m Schmidt
+    Pu  Guk  = UK Schmidt Southern Survey                  
+               1974-1987, 48in/1.2m Schmidt
+
+    S   Spe  = speckle interferometric technique
+    Sa  Sam  = aperture masking technique (MAPPIT, etc.)
+    Sb  Sbi  = bispectrum speckle interferometric technique
+    Sc  Sch  = CHARA speckle  
+    Si  Sir  = IR speckle  
+    Sp  Spo  = speckle polarimetry
+    Ss  Ssa  = shift-and-add technique
+    St       = Tokovinin "hrcam"
+    Su  Sus  = USNO speckle  
+
+    T   M    = Transit circle / Meridian circle
+    Tm  I    = "Eyepiece micrometer" transit/chronometric technique
+
+    V        = visual estimate
+
+    X        = spectroscopic technique 
+    Xg  X    = Visual estimate made with an objective grating
+    Xh  Zhr  = high-resolution spectroscopy
+    Xl  Zlr  = low-resolution spectroscopy
+    Xr  Zre  = resolved spectroscopy
+    Xs  Zsp  = spectrophotometry      
+
+    Z   Z    = photometric technique
+    Z   Zpt  = photometer
+    Zc       = CCD photometry
+    Zd  V    = Photocell with diaphragm in focal plane
+    Zp  Z    = Visual photometry with a double-image or polarizing photometer
+    Zw  Y    = Wedge photometer
+
+Additional codes for references:
+       not = paper referenced in Notes file 
+       orb = orbit information in Sixth Orbit Catalog
+       
+-----------------------------------------------------------------------------
+                                                                                
+WDS OBSERVATION CATALOG: codes (data lines, columns 115-116)                                   
+                                                                                
+D  Thought to be reliable magnitudes / magnitude difference
+F  Too faint, not seen, or not located
+G  This measure is not in the published paper but is a vector combination
+   of measured pairs by this author for a pair already in the WDS.  
+I  Identification, or question about such
+L  Original PA given as n, nf, f, sf, s, sp, p, or np (n = north, s = south, 
+   f = following, p = preceeding), and converted to 0, 45, 90, 135, 180, 225, 
+   270, or 315, respectively.  Also, a PA given as e (east) or w (west) is 
+   converted to 90 or 270 respectively.  The PA is assumed accurate only to 
+   the nearest quadrant (i.e., +/- 45 deg).
+M  Mean of multiple measures of same photographic plate or CCD.      
+N  Identification  or position error, or misprint in publication, corrected.
+O  Optical
+P  Corrected by author
+V  No. of nights varies 50% or more between angle and separation measures       
+   In this case, N = [(Npa + Nsep) / 2], rounding down.
+X  Identification error, position error, or misprint in publication, NOT
+   corrected. Code "X" data are not included in summary lines. The X code is
+   also used to indicate measures superceded by later reductions of the same
+   data (for example, reprocessing of Astrographic Catalog data for the WFC).
+Z  Measurer other than author(s)
+
+-----------------------------------------------------------------------------
+
+WDS OBSERVATION CATALOG: data entry notes (data lines, column 117) 
+                                                                                
+0  Pre-IDS measure added by Burnham, Aitken, etc.                N=161,240
+1  Post-IDS measure added by Lick Observatory                    N= 14,858
+2  Post-IDS measure added by USNO                                N= 75,575
+3  Measure prior to Lick punch-card collection, added by USNO    N=132,903
+4  Post WDS (1984.0) measure added by USNO                       N= 65,250
+5  Post WDS (1996.0) measure added by USNO                       N= 63,271
+6  Post WDS (2001.0) measure added by USNO                       N=170,862
+7  Post WDS (2006.5) measure added by USNO                       N=508,606
+
+A total of 1,192,565 data lines of 120,005 systems of which 858,768 are
+complete astrometric measures (T,pa,sep).
+                                 
+==============================================================================
+
+SIXTH ORBIT CATALOG - elements:
+
+P     = Period of revolution
+pflag = units of period (c = centuries, d = days, h = hours, y = years)
+a     = Semimajor axis of orbit
+aflag = units of semimajor axis (a = arcsec, m = milliarcsec, M = arcminutes,
+        u = microarcsec)  
+i     = inclination, angle between plane of the sky and plane of the orbit, 
+        0-180 degrees. The motion is direct (i.e., in direction of increasing
+        position angles) if i < 90 and retrograde if i > 90.
+Node  = Position angle of the line of intersection between the plane of the
+        orbit and plane of the sky, in degrees.
+T     = epoch of periastron passage
+tflag = units of T (y = years, d = MJD)
+e     = orbital eccentricity
+omega = longitude of persiastron, in degrees 
+G     = orbit grade (1 = definitive, 2 = good, 3 = reliable, 4 = preliminary,
+        5 = indeterminate, 9 = unknown). The grading procedure is described
+        in the introduction to the Sixth Catalog  
+        (see http://ad.usno.navy.mil/ad/wds/int6.html).
+
+Notes : In some cases more than one orbit will be provided. Cases like this
+fall into one of two categories:
+      1. More than one binary in a multiple system has an orbit calculated.
+      2. While the orbit grading algorithm grades orbits objectively on
+         many categories, they sometimes can achieve approximately the same 
+         grade and the decision as to which orbit is better may be ambiguous. 
+         As a rule of thumb, following the time-honored precepts of van den 
+         Bos and Worley, and asking the question "Is this Orbit Really
+         Necessary?" (see, for example, PASP, 74, 297; 1962 ), we answer in 
+         the negative, and retain the earlier orbit. However, there still 
+         remain cases where the orbits can be sufficiently different but 
+         ambiguous (for example, solutions with different quadrants selected 
+         for small magnitude difference systems). In this case, more than one 
+         orbit may be retained.
+      3. A grade 8 or 9 orbit (which was not provided in Worley & Heintz) is
+         given when it is not possible to evaluate the orbit as no "classical 
+         double star" data are available. 
+           Interferometric orbits based solely on visibility data (i.e., no
+         rho and theta provided) are given a grade of 8. Were complete data
+         available these orbits (usually combined solutions with
+         spectroscopic data) would undoubtedly have a very good grade.
+           Astrometric orbits (derived from photocenter vs. barycenter
+         shifts) are given a grade of 9. When resolved, systems of this type
+         typically show rather large differences between the elements 
+         computed astrometrically and those based on differential measures. 
+           Further, the grades are only based on available visual double star
+         data. If the solution to an orbit is based on a combined solution
+         (e.g., with spectroscopic information), certain elements are
+         certainly known better. Utilizers of the data are encouraged to
+         thoroughly scan the "notes" section.
+
+-----------------------------------------------------------------------------
+
+SIXTH ORBIT CATALOG - ephemerides:
+
+Each orbit above is provided with an ephemeris for the next five years.
+While many orbits may be of poor quality, short-term ephemerides are often
+quite good.
+
+-----------------------------------------------------------------------------
+
+SIXTH ORBIT CATALOG - figures:
+
+In all orbit figures in this catalog, green plus signs indicate visual 
+(micrometric) observations, violet asterisks photographic measures, and blue
+symbols various interferometric techniques (open circles, filled circles,
+and filled squares for eyepiece interferometry, speckle or other 
+single-aperture techniques, and multi-aperture techniques, respectively).
+Finally, a red "H" or "T" indicates a measure from Hipparcos or Tycho. The
+dot-dash line indicates the line of nodes. Scales are in arcseconds, and the
+curved arrow at lower right indicates the direction of orbital motion.
+
+==============================================================================
+
+RECTILINEAR ELEMENTS CATALOG - elements:
+
+The elements are defined by linear relationships relative to the closest
+approach 
+
+   x = -sin(theta) * rho
+   y =  cos(theta) * rho
+
+and let (x0,y0,t0) or (rho0,theta0,t0) define the relative location and time 
+of closest approach
+      
+Solve for:
+            x = xa * (t-t0) + x0
+            y = ya * (t-t0) + y0
+
+A standard weighted least squares fit is made, with weights of individual 
+measures determined using the technique outlined in the Sixth Catalog of 
+Orbits of Visual Binary Stars. RMS errors determine the errors of these 
+parameters.
+
+-----------------------------------------------------------------------------
+
+RECTILINEAR ELEMENTS CATALOG - ephemerides:
+
+Ephemerides for years 2010-2035 are provided with the elemental errors 
+propagated into the rho and theta relative position.
+
+-----------------------------------------------------------------------------
+
+RECTILINEAR ELEMENTS CATALOG - figures:
+
+   Figures are also provided for each system, and are linked from the main 
+catalog by the letter "P" in one of the righthand columns. The figures include
+all measures in the WDS, as well as the linear fits whose elements are given 
+in the main catalog (shown as a solid black line). Individual measures in 
+these figures are color-coded as in the Orbit Catalog; green, blue, and purple
+indicate micrometric, interferometric, and photographic measures, 
+respectively, while a red "H" or "T" indicates a measure from Hipparcos or 
+Tycho. Measures are connected to their predicted locations by "O-C" lines; 
+measures given zero weight are indicates by dotted O-C's.
+   For those pairs with two sets of proper motions in the WDS, a red line 
+indicates the differential proper motion predicted by these values. Since most
+of these proper motions are from the Hipparcos or Tycho-2 catalogs, the red 
+lines intersect the least-squares fit to the data at the Hipparcos epoch of 
+1991.25. The lengths of both the black and red lines correspond to a similar 
+range of dates (usually roughly corresponding to the range of observation 
+dates, unless T0 falls outside that range). 
+
+==============================================================================
+Brian D. Mason                                                               
+Project Manager, Washington Double Star Program                              
+Astrometry Department                                                        
+U. S. Naval Observatory                               phone:      202-762-1412
+3450 Massachusetts Avenue NW                          fax:        202-762-1516
+Washington DC 20392-5420                              email: bdm@usno.navy.mil
+------------------------------------------------------------------------------
+WDS web page:                          http://ad.usno.navy.mil/ad/wds/wds.html
+==============================================================================
