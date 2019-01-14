@@ -1,6 +1,9 @@
 # A circumbinary protoplanetary disc in a polar configuration
 
-Material associated with ALMA paper on HD 98800
+Material associated with ALMA paper on HD 98800.
+ * DOI: 10.1038/s41550-018-0667-x
+ * https://www.nature.com/articles/s41550-018-0667-x
+ * Free PDF at https://rdcu.be/bgNSO.
 
 Not all material is here due to volume limits, feel free to get in touch.
 
